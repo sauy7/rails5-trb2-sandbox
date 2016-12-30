@@ -1,0 +1,9 @@
+<%= form_for model do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true %>
+  </div>
+  <div>
+    <%= f.submit 'Save thing' %>
+  </div>
+<% end %>
