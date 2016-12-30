@@ -1,7 +1,7 @@
 class Thing < ApplicationRecord
   class Index < Trailblazer::Operation
     step :model!
-    step Policy::Pundit(Thing::Policy, :index?)
+    # step Policy::Pundit(Thing::Policy, :index?)
 
     def model!(options, **)
       options['model'] = Thing.all
