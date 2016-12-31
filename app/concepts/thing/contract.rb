@@ -1,11 +1,7 @@
-class Thing < ApplicationRecord
-  module Contract
-    class Create < Reform::Form
-      property :name
+class Thing::Contract::Create < Reform::Form
+  property :name
 
-      validation do
-        required(:name).filled(:str?)
-      end
-    end
+  validation do
+    required(:name).filled(:str?)
   end
 end

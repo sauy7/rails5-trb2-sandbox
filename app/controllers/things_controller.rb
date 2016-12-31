@@ -4,7 +4,5 @@ class ThingsController < ApplicationController
     render concept('thing/cell/new', result['model'], layout: Sandbox::Cell::Layout)
   end
 
-  def create
-
-  end
+  def create; end
 end

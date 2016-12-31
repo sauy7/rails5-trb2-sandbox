@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
   "https://github.com/#{repo_name}.git"
 end
 
@@ -15,13 +15,16 @@ gem 'rails', '~> 5.0.1'
 gem 'sass-rails', '~> 5.0'
 gem 'sqlite3'
 gem 'trailblazer-cells'
+# rubocop:disable Bundler/OrderedGems
 gem 'trailblazer-rails'
 gem 'cells-rails'
+# rubocop:enable Bundler/OrderedGems
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'faker'
+  gem 'rubocop'
 end
 
 group :development do

@@ -1,6 +1,2 @@
-class Thing < ApplicationRecord
-  module Cell
-    class New < Trailblazer::Cell
-    end
-  end
+class Thing::Cell::New < Trailblazer::Cell
 end

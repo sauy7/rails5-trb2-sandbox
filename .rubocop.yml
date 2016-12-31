@@ -1,0 +1,35 @@
+inherit_from:
+
+AllCops:
+  Exclude:
+    - Guardfile
+    - bin/*
+    - db/schema.rb
+    - db/migrate/*.rb
+    - db/seeds/**/*.rb
+    - test/**/*.rb
+  DefaultFormatter: simple
+
+Metrics/LineLength:
+  Max: 120
+
+Rails:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/RegexpLiteral:
+  EnforcedStyle: percent_r
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Documentation:
+  Enabled: false
+
+# Metrics/BlockLength:
+#  Max: 100
+
+# Metrics/ClassLength:
+#  Max: 1500

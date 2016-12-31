@@ -1,6 +1,2 @@
-module Sandbox
-  module Cell
-    class Index < Trailblazer::Cell
-    end
-  end
+class Sandbox::Cell::Index < Trailblazer::Cell
 end

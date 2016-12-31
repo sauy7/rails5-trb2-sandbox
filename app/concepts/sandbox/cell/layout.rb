@@ -1,9 +1,5 @@
-module Sandbox
-  module Cell
-    class Layout < Trailblazer::Cell # :nodoc:
-      include ActionView::Helpers::CsrfHelper
+class Sandbox::Cell::Layout < Trailblazer::Cell
+  include ActionView::Helpers::CsrfHelper
 
-      delegate :current_user, :flash, to: :parent_controller
-    end
-  end
+  delegate :current_user, :flash, to: :parent_controller
 end

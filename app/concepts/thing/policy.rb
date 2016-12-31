@@ -1,7 +1,5 @@
-class Thing < ApplicationRecord
-  class Policy < Sandbox::Policy # :nodoc:
-    def index?
-      true
-    end
+class Thing::Policy < Sandbox::Policy
+  def index?
+    true
   end
 end

@@ -1,18 +1,16 @@
-module Sandbox
-  class Policy # :nodoc:
-    attr_reader :user, :resource
+class Sandbox::Policy
+  attr_reader :user, :resource
 
-    def initialize(user, resource)
-      @user = user
-      @resource = resource
-    end
+  def initialize(user, resource)
+    @user = user
+    @resource = resource
+  end
 
-    def admin?
-      @user.admin?
-    end
+  def admin?
+    @user.admin?
+  end
 
-    def super_admin?
-      @user.super_admin?
-    end
+  def super_admin?
+    @user.super_admin?
   end
 end
