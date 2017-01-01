@@ -23,7 +23,7 @@ Style/RegexpLiteral:
   EnforcedStyle: percent_r
 
 Style/ClassAndModuleChildren:
-  EnforcedStyle: compact
+  Enabled: false
 
 Documentation:
   Enabled: false

@@ -1,2 +1,6 @@
-class Thing::Cell::New < Trailblazer::Cell
+class Thing
+  module Cell
+    class New < Trailblazer::Cell
+    end
+  end
 end

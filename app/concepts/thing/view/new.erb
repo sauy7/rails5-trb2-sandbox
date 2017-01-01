@@ -1,7 +1,9 @@
-<%= form_for model do |f| %>
+<%= form_for model['model'] do |f| %>
   <div>
     <%= f.label :name %>
-    <%= f.text_field :name, required: true %>
+    <%= f.text_field :name %> <!--, required: true %> -->
+    <!-- RENDER AN ERROR CELL BASED ON:
+         model['contract.default'].errors.messages.first -->
   </div>
   <div>
     <%= f.submit 'Save thing' %>
